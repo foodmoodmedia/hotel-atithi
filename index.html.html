@@ -1,0 +1,1533 @@
+html lang=en
+head
+    meta charset=UTF-8
+    meta name=viewport content=width=device-width, initial-scale=1.0
+    titleHotel Atithi - Experience Comfort and Care in the Heart of Sagartitle
+    meta name=description content=Hotel Atithi offers premium boutique accommodation in Sagar, Madhya Pradesh. Modern amenities, exceptional hospitality, budget-friendly prices.
+    
+    !-- Google Fonts --
+    link href=httpsfonts.googleapis.comcss2family=Interwght@400;500;600;700&display=swap rel=stylesheet
+    
+    style
+         ===========================
+           LUXURY MINIMALIST DESIGN SYSTEM
+           =========================== 
+        
+        root {
+             Primary Backgrounds - Warm foundation 
+            --bg-primary #fffef2;
+            --bg-secondary #f6f5e8;
+            --bg-subtle #ebeade;
+            
+             Text Hierarchy - Rich contrast 
+            --text-primary #333333;
+            --text-secondary #666666;
+            --text-light #bcbbb4;
+            --text-meta #4a4a4a;
+            
+             Interactive States 
+            --interactive-base #333333;
+            --interactive-hover #000000;
+            --focus-outline #252525;
+            
+             Borders & Separators 
+            --border-light #bcbbb4;
+            --border-medium #cccccc;
+            --border-subtle rgba(51,51,51,0.2);
+            
+             Functional Colors 
+            --status-error #ba3e2b;
+            --status-success #4a4a4a;
+            
+            --radius 0px;
+        }
+
+         {
+            margin 0;
+            padding 0;
+            box-sizing border-box;
+        }
+
+        body {
+            font-family 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            -webkit-font-smoothing antialiased;
+            -moz-osx-font-smoothing grayscale;
+            background var(--bg-primary);
+            color var(--text-primary);
+            line-height 1.6;
+        }
+
+         Typography 
+        .hero-large {
+            font-size 48px;
+            font-weight 400;
+            line-height 1.2;
+            color var(--text-primary);
+            margin-bottom 24px;
+        }
+
+        .hero-medium {
+            font-size 36px;
+            font-weight 400;
+            line-height 1.3;
+            color var(--text-primary);
+            margin-bottom 16px;
+        }
+
+        .heading-2 {
+            font-size 24px;
+            font-weight 400;
+            line-height 1.2;
+            color var(--text-primary);
+        }
+
+        .heading-3 {
+            font-size 18px;
+            font-weight 500;
+            line-height 1.3;
+            color var(--text-primary);
+        }
+
+        .body-large {
+            font-size 18px;
+            font-weight 400;
+            line-height 1.7;
+            color var(--text-primary);
+        }
+
+        .body-regular {
+            font-size 16px;
+            font-weight 400;
+            line-height 1.6;
+            color var(--text-primary);
+        }
+
+        .body-small {
+            font-size 14px;
+            font-weight 400;
+            line-height 1.5;
+            color var(--text-secondary);
+        }
+
+         Buttons 
+        .btn-primary {
+            background transparent;
+            color var(--interactive-base);
+            border 1px solid var(--interactive-base);
+            border-radius 0px;
+            padding 18px 32px;
+            font-size 14px;
+            font-weight 600;
+            cursor pointer;
+            transition all 0.2s cubic-bezier(.645,.045,.355,1);
+            text-decoration none;
+            display inline-flex;
+            align-items center;
+            justify-content center;
+            gap 8px;
+        }
+
+        .btn-primaryhover {
+            background var(--interactive-base);
+            color var(--bg-primary);
+            transform translateY(-1px);
+        }
+
+        .btn-secondary {
+            background none;
+            border none;
+            padding 12px 16px;
+            font-size 14px;
+            font-weight 500;
+            color var(--interactive-base);
+            cursor pointer;
+            text-decoration none;
+            position relative;
+            transition all 0.2s ease;
+        }
+
+        .btn-secondaryafter {
+            content '';
+            position absolute;
+            bottom 8px;
+            left 16px;
+            width 0;
+            height 1px;
+            background var(--interactive-base);
+            transition width 0.3s ease;
+        }
+
+        .btn-secondaryhoverafter {
+            width calc(100% - 32px);
+        }
+
+        .btn-full-width {
+            width 100%;
+        }
+
+         Navigation 
+        .navigation-header {
+            background rgba(255, 254, 242, 0.95);
+            border-bottom 1px solid var(--border-light);
+            padding 20px 0;
+            position sticky;
+            top 0;
+            z-index 100;
+            backdrop-filter blur(10px);
+        }
+
+        .header-content {
+            display flex;
+            align-items center;
+            justify-content space-between;
+        }
+
+        .navigation-logo {
+            font-size 24px;
+            font-weight 500;
+            color var(--text-primary);
+            text-decoration none;
+            letter-spacing -0.5px;
+            background none;
+            border none;
+            cursor pointer;
+        }
+
+        .navigation-menu {
+            display flex;
+            align-items center;
+            gap 32px;
+            list-style none;
+        }
+
+        .navigation-link {
+            color var(--text-primary);
+            text-decoration none;
+            font-size 14px;
+            font-weight 500;
+            padding 8px 0;
+            position relative;
+            transition all 0.2s ease;
+            background none;
+            border none;
+            cursor pointer;
+        }
+
+        .navigation-linkafter {
+            content '';
+            position absolute;
+            bottom 0;
+            left 0;
+            width 0;
+            height 1px;
+            background var(--text-primary);
+            transition width 0.3s ease;
+        }
+
+        .navigation-linkhoverafter {
+            width 100%;
+        }
+
+        .navigation-utilities {
+            display flex;
+            align-items center;
+            gap 20px;
+        }
+
+        .phone-link {
+            display flex;
+            align-items center;
+            gap 8px;
+            color var(--text-primary);
+            text-decoration none;
+            font-size 14px;
+        }
+
+         Hero Section 
+        .hero-section {
+            position relative;
+            height 90vh;
+            min-height 600px;
+            display flex;
+            align-items center;
+            overflow hidden;
+        }
+
+        .hero-image-container {
+            position absolute;
+            top 0;
+            left 0;
+            width 100%;
+            height 100%;
+            z-index 0;
+        }
+
+        .hero-image {
+            width 100%;
+            height 100%;
+            object-fit cover;
+        }
+
+        .hero-overlay {
+            position absolute;
+            top 0;
+            left 0;
+            width 100%;
+            height 100%;
+            background linear-gradient(135deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 100%);
+        }
+
+        .hero-content {
+            position relative;
+            z-index 1;
+            color #ffffff;
+            width 100%;
+        }
+
+        .hero-content .hero-large {
+            color #ffffff;
+            max-width 700px;
+        }
+
+        .hero-description {
+            color rgba(255,255,255,0.9);
+            max-width 600px;
+            margin-bottom 32px;
+        }
+
+        .hero-actions {
+            display flex;
+            gap 16px;
+            flex-wrap wrap;
+        }
+
+        .hero-actions .btn-primary {
+            border-color #ffffff;
+            color #ffffff;
+        }
+
+        .hero-actions .btn-primaryhover {
+            background #ffffff;
+            color var(--text-primary);
+        }
+
+        .hero-actions .btn-secondary {
+            color #ffffff;
+        }
+
+        .hero-actions .btn-secondaryafter {
+            background #ffffff;
+        }
+
+         Layout 
+        .container {
+            max-width 1400px;
+            margin 0 auto;
+            padding 0 40px;
+        }
+
+        .section-padding {
+            padding 120px 0;
+        }
+
+        .bg-secondary {
+            background var(--bg-secondary);
+        }
+
+        .section-header {
+            text-align center;
+            margin-bottom 80px;
+        }
+
+        .section-subtitle {
+            color var(--text-secondary);
+            max-width 700px;
+            margin 0 auto;
+        }
+
+        .grid-two-column {
+            display grid;
+            grid-template-columns 1fr 1fr;
+            gap 80px;
+            align-items center;
+        }
+
+         About Section 
+        .about-image-container {
+            width 100%;
+            height 500px;
+            overflow hidden;
+        }
+
+        .about-image {
+            width 100%;
+            height 100%;
+            object-fit cover;
+            transition transform 0.3s ease;
+        }
+
+        .about-image-containerhover .about-image {
+            transform scale(1.05);
+        }
+
+        .values-grid {
+            display grid;
+            grid-template-columns 1fr 1fr;
+            gap 32px;
+            margin-top 48px;
+        }
+
+        .value-card {
+            padding 24px;
+            border 1px solid var(--border-light);
+            transition all 0.2s ease;
+        }
+
+        .value-cardhover {
+            transform translateY(-4px);
+            box-shadow 0 8px 24px rgba(0,0,0,0.08);
+        }
+
+        .value-icon {
+            width 48px;
+            height 48px;
+            display flex;
+            align-items center;
+            justify-content center;
+            background var(--bg-secondary);
+            margin-bottom 16px;
+        }
+
+         Rooms Section 
+        .rooms-grid {
+            display grid;
+            grid-template-columns repeat(auto-fit, minmax(350px, 1fr));
+            gap 40px;
+        }
+
+        .room-card {
+            background var(--bg-primary);
+            overflow hidden;
+            transition all 0.2s ease;
+            border 1px solid var(--border-light);
+        }
+
+        .room-cardhover {
+            transform translateY(-4px);
+            box-shadow 0 12px 32px rgba(0,0,0,0.1);
+        }
+
+        .room-image-container {
+            position relative;
+            width 100%;
+            height 280px;
+            overflow hidden;
+        }
+
+        .room-image {
+            width 100%;
+            height 100%;
+            object-fit cover;
+            transition transform 0.3s ease;
+        }
+
+        .room-cardhover .room-image {
+            transform scale(1.05);
+        }
+
+        .room-capacity-badge {
+            position absolute;
+            top 16px;
+            right 16px;
+            background rgba(255,255,255,0.95);
+            padding 8px 16px;
+            display flex;
+            align-items center;
+            gap 6px;
+            font-size 12px;
+            font-weight 500;
+        }
+
+        .room-content {
+            padding 32px;
+        }
+
+        .room-header {
+            display flex;
+            justify-content space-between;
+            align-items flex-start;
+            margin-bottom 16px;
+        }
+
+        .room-price {
+            text-align right;
+        }
+
+        .price-amount {
+            font-size 28px;
+            font-weight 600;
+            color var(--text-primary);
+            display block;
+        }
+
+        .price-period {
+            font-size 12px;
+            color var(--text-secondary);
+        }
+
+        .room-features {
+            display grid;
+            grid-template-columns 1fr 1fr;
+            gap 12px;
+            margin 24px 0 32px;
+        }
+
+        .feature-item {
+            display flex;
+            align-items center;
+            gap 8px;
+        }
+
+         Amenities 
+        .amenities-grid {
+            display grid;
+            grid-template-columns repeat(auto-fit, minmax(250px, 1fr));
+            gap 32px;
+        }
+
+        .amenity-card {
+            padding 32px;
+            border 1px solid var(--border-light);
+            transition all 0.2s ease;
+            text-align center;
+        }
+
+        .amenity-cardhover {
+            transform translateY(-4px);
+            box-shadow 0 8px 24px rgba(0,0,0,0.08);
+        }
+
+        .amenity-icon {
+            width 64px;
+            height 64px;
+            display flex;
+            align-items center;
+            justify-content center;
+            background var(--bg-secondary);
+            margin 0 auto 20px;
+            font-size 28px;
+        }
+
+         Gallery 
+        .gallery-filters {
+            display flex;
+            justify-content center;
+            gap 16px;
+            margin-bottom 48px;
+            flex-wrap wrap;
+        }
+
+        .filter-btn {
+            padding 12px 24px;
+            background none;
+            border 1px solid var(--border-medium);
+            color var(--text-primary);
+            font-size 14px;
+            font-weight 500;
+            cursor pointer;
+            transition all 0.2s ease;
+        }
+
+        .filter-btnhover,
+        .filter-btn.active {
+            background var(--text-primary);
+            color var(--bg-primary);
+            border-color var(--text-primary);
+        }
+
+        .gallery-grid {
+            display grid;
+            grid-template-columns repeat(auto-fit, minmax(300px, 1fr));
+            gap 24px;
+        }
+
+        .gallery-item {
+            position relative;
+            height 300px;
+            overflow hidden;
+            cursor pointer;
+        }
+
+        .gallery-image {
+            width 100%;
+            height 100%;
+            object-fit cover;
+            transition transform 0.3s ease;
+        }
+
+        .gallery-itemhover .gallery-image {
+            transform scale(1.1);
+        }
+
+         Reviews 
+        .reviews-grid {
+            display grid;
+            grid-template-columns repeat(auto-fit, minmax(300px, 1fr));
+            gap 32px;
+        }
+
+        .review-card {
+            padding 32px;
+            background var(--bg-primary);
+            border 1px solid var(--border-light);
+            transition all 0.2s ease;
+        }
+
+        .review-cardhover {
+            transform translateY(-4px);
+            box-shadow 0 8px 24px rgba(0,0,0,0.08);
+        }
+
+        .review-header {
+            display flex;
+            gap 16px;
+            margin-bottom 16px;
+        }
+
+        .review-avatar {
+            width 48px;
+            height 48px;
+            background var(--text-primary);
+            color var(--bg-primary);
+            display flex;
+            align-items center;
+            justify-content center;
+            font-weight 600;
+            flex-shrink 0;
+        }
+
+        .review-stars {
+            display flex;
+            gap 4px;
+            margin-top 4px;
+            color var(--text-primary);
+        }
+
+         Booking Section 
+        .booking-wrapper {
+            display grid;
+            grid-template-columns 1fr 1.5fr;
+            gap 60px;
+        }
+
+        .offer-card {
+            padding 20px;
+            background var(--bg-secondary);
+            margin-bottom 16px;
+            border-left 3px solid var(--text-primary);
+        }
+
+        .offer-code {
+            display inline-block;
+            padding 4px 12px;
+            background var(--text-primary);
+            color var(--bg-primary);
+            font-size 12px;
+            font-weight 600;
+            margin-top 12px;
+            letter-spacing 1px;
+        }
+
+        .booking-form-container {
+            background var(--bg-secondary);
+            padding 48px;
+            border 1px solid var(--border-light);
+        }
+
+        .form-group {
+            margin-bottom 24px;
+        }
+
+        .form-row {
+            display grid;
+            grid-template-columns 1fr 1fr;
+            gap 24px;
+        }
+
+        .form-label {
+            display flex;
+            align-items center;
+            gap 8px;
+            font-size 14px;
+            font-weight 500;
+            color var(--text-primary);
+            margin-bottom 8px;
+        }
+
+        .form-input {
+            width 100%;
+            padding 14px 16px;
+            border 1px solid var(--border-medium);
+            background var(--bg-primary);
+            font-size 14px;
+            color var(--text-primary);
+            transition all 0.2s ease;
+            font-family inherit;
+        }
+
+        .form-inputfocus {
+            outline none;
+            border-color var(--text-primary);
+            box-shadow 0 0 0 3px rgba(51,51,51,0.1);
+        }
+
+        textarea.form-input {
+            resize vertical;
+            min-height 100px;
+        }
+
+         Contact 
+        .contact-wrapper {
+            display grid;
+            grid-template-columns 1fr 1.5fr;
+            gap 60px;
+        }
+
+        .contact-card {
+            padding 24px;
+            border 1px solid var(--border-light);
+            margin-bottom 24px;
+        }
+
+        .contact-icon {
+            width 48px;
+            height 48px;
+            display flex;
+            align-items center;
+            justify-content center;
+            background var(--bg-primary);
+            margin-bottom 16px;
+            font-size 24px;
+        }
+
+        .map-container {
+            height 600px;
+            border 1px solid var(--border-light);
+            overflow hidden;
+        }
+
+         Footer 
+        .footer {
+            background var(--text-primary);
+            color var(--bg-primary);
+            padding 60px 0 24px;
+        }
+
+        .footer-content {
+            display grid;
+            grid-template-columns repeat(auto-fit, minmax(200px, 1fr));
+            gap 48px;
+            margin-bottom 48px;
+        }
+
+        .footer-links {
+            list-style none;
+        }
+
+        .footer-links li {
+            margin-bottom 10px;
+        }
+
+        .footer-link {
+            color rgba(255,255,255,0.7);
+            text-decoration none;
+            transition color 0.2s ease;
+        }
+
+        .footer-linkhover {
+            color var(--bg-primary);
+        }
+
+        .footer-bottom {
+            display flex;
+            justify-content space-between;
+            align-items center;
+            padding-top 24px;
+            border-top 1px solid rgba(255,255,255,0.1);
+        }
+
+         Responsive 
+        @media (max-width 1024px) {
+            .container {
+                padding 0 24px;
+            }
+
+            .section-padding {
+                padding 80px 0;
+            }
+
+            .hero-large {
+                font-size 36px;
+            }
+
+            .hero-medium {
+                font-size 28px;
+            }
+
+            .grid-two-column {
+                grid-template-columns 1fr;
+                gap 40px;
+            }
+
+            .values-grid {
+                grid-template-columns 1fr;
+            }
+
+            .booking-wrapper {
+                grid-template-columns 1fr;
+            }
+
+            .contact-wrapper {
+                grid-template-columns 1fr;
+            }
+
+            .navigation-menu {
+                display none;
+            }
+        }
+
+        @media (max-width 640px) {
+            .container {
+                padding 0 16px;
+            }
+
+            .hero-large {
+                font-size 28px;
+            }
+
+            .room-features {
+                grid-template-columns 1fr;
+            }
+
+            .form-row {
+                grid-template-columns 1fr;
+            }
+
+            .footer-bottom {
+                flex-direction column;
+                gap 12px;
+            }
+        }
+
+        .hidden {
+            display none;
+        }
+    style
+head
+body
+    !-- Header --
+    header class=navigation-header
+        div class=container
+            div class=header-content
+                button onclick=scrollToSection('home') class=navigation-logoHotel Atithibutton
+                
+                nav class=navigation-menu
+                    button onclick=scrollToSection('home') class=navigation-linkHomebutton
+                    button onclick=scrollToSection('about') class=navigation-linkAboutbutton
+                    button onclick=scrollToSection('rooms') class=navigation-linkRoomsbutton
+                    button onclick=scrollToSection('amenities') class=navigation-linkAmenitiesbutton
+                    button onclick=scrollToSection('gallery') class=navigation-linkGallerybutton
+                    button onclick=scrollToSection('contact') class=navigation-linkContactbutton
+                nav
+
+                div class=navigation-utilities
+                    a href=tel+918349580770 class=phone-link
+                        span📞span
+                        span+91 83495 80770span
+                    a
+                    button onclick=scrollToSection('booking') class=btn-primaryBook Nowbutton
+                div
+            div
+        div
+    header
+
+    !-- Hero Section --
+    section id=home class=hero-section
+        div class=hero-image-container
+            img src=httpsimages.unsplash.comphoto-1758448755969-8791367cf5c5 alt=Hotel Atithi class=hero-image
+            div class=hero-overlaydiv
+        div
+        
+        div class=hero-content
+            div class=container
+                h1 class=hero-largeExperience Comfort and Care in the Heart of Sagarh1
+                p class=hero-description body-large
+                    A premium boutique hotel offering exceptional hospitality, modern amenities, and attention to every detail of your comfort.
+                p
+                div class=hero-actions
+                    button onclick=scrollToSection('booking') class=btn-primary
+                        Book Your Stay →
+                    button
+                    a href=tel+918349580770 class=btn-secondaryCall Nowa
+                div
+            div
+        div
+    section
+
+    !-- About Section --
+    section id=about class=section-padding
+        div class=container
+            div class=grid-two-column
+                div class=about-image-container
+                    img src=httpsimages.unsplash.comphoto-1625244724120-1fd1d34d00f6 alt=Hotel Lobby class=about-image
+                div
+                
+                div
+                    h2 class=hero-mediumWelcome to Hotel Atithih2
+                    p class=body-large style=margin-bottom 24px;
+                        Located in the heart of Sagar, Madhya Pradesh, Hotel Atithi offers a perfect blend of comfort, convenience, and care.
+                    p
+                    p class=body-regular style=margin-bottom 48px; color var(--text-secondary);
+                        Whether you're visiting for business, leisure, or exploring the rich cultural heritage of the region, we ensure your stay is memorable.
+                    p
+                    
+                    div class=values-grid
+                        div class=value-card
+                            div class=value-icon❤️div
+                            h3 class=heading-3 style=margin-bottom 8px;Exceptional Hospitalityh3
+                            p class=body-smallWe treat every guest like family, ensuring personalized care throughout your stay.p
+                        div
+                        div class=value-card
+                            div class=value-icon✨div
+                            h3 class=heading-3 style=margin-bottom 8px;Impeccable Cleanlinessh3
+                            p class=body-smallMaintaining the highest standards of hygiene in every corner of our property.p
+                        div
+                        div class=value-card
+                            div class=value-icon🏆div
+                            h3 class=heading-3 style=margin-bottom 8px;Premium Qualityh3
+                            p class=body-smallLuxury amenities and services at budget-friendly prices.p
+                        div
+                        div class=value-card
+                            div class=value-icon👥div
+                            h3 class=heading-3 style=margin-bottom 8px;Guest Comfort Firsth3
+                            p class=body-smallEvery detail is designed with your comfort in mind.p
+                        div
+                    div
+                div
+            div
+        div
+    section
+
+    !-- Rooms Section --
+    section id=rooms class=section-padding bg-secondary
+        div class=container
+            div class=section-header
+                h2 class=hero-mediumRooms & Suitesh2
+                p class=body-large section-subtitle
+                    Choose from our carefully designed accommodations, each offering comfort and modern amenities
+                p
+            div
+
+            div class=rooms-grid
+                div class=room-card
+                    div class=room-image-container
+                        img src=httpsimages.unsplash.comphoto-1760067537740-faa11f7bdf1e alt=Standard Room class=room-image
+                        div class=room-capacity-badge
+                            span👥span
+                            span2 Guestsspan
+                        div
+                    div
+                    
+                    div class=room-content
+                        div class=room-header
+                            h3 class=heading-2Standard Roomh3
+                            div class=room-price
+                                span class=price-amount₹1,499span
+                                span class=price-periodnightspan
+                            div
+                        div
+                        
+                        p class=body-regular style=margin-bottom 24px; color var(--text-secondary);
+                            Comfortable and well-appointed room perfect for solo travelers and couples.
+                        p
+                        
+                        div class=room-features
+                            div class=feature-item
+                                span✓span
+                                span class=body-smallKing Size Bedspan
+                            div
+                            div class=feature-item
+                                span✓span
+                                span class=body-smallACspan
+                            div
+                            div class=feature-item
+                                span✓span
+                                span class=body-smallFree Wi-Fispan
+                            div
+                            div class=feature-item
+                                span✓span
+                                span class=body-smallLED TVspan
+                            div
+                            div class=feature-item
+                                span✓span
+                                span class=body-smallAttached Bathroomspan
+                            div
+                            div class=feature-item
+                                span✓span
+                                span class=body-smallClean Towelsspan
+                            div
+                        div
+                        
+                        button onclick=scrollToSection('booking') class=btn-primary btn-full-width
+                            Book This Room →
+                        button
+                    div
+                div
+
+                div class=room-card
+                    div class=room-image-container
+                        img src=httpsimages.unsplash.comphoto-1758448755969-8791367cf5c5 alt=Deluxe Room class=room-image
+                        div class=room-capacity-badge
+                            span👥span
+                            span2-3 Guestsspan
+                        div
+                    div
+                    
+                    div class=room-content
+                        div class=room-header
+                            h3 class=heading-2Deluxe Roomh3
+                            div class=room-price
+                                span class=price-amount₹2,299span
+                                span class=price-periodnightspan
+                            div
+                        div
+                        
+                        p class=body-regular style=margin-bottom 24px; color var(--text-secondary);
+                            Spacious room with premium furnishings and enhanced comfort.
+                        p
+                        
+                        div class=room-features
+                            div class=feature-item
+                                span✓span
+                                span class=body-smallQueen Size Bedspan
+                            div
+                            div class=feature-item
+                                span✓span
+                                span class=body-smallACspan
+                            div
+                            div class=feature-item
+                                span✓span
+                                span class=body-smallFree Wi-Fispan
+                            div
+                            div class=feature-item
+                                span✓span
+                                span class=body-smallSmart TVspan
+                            div
+                            div class=feature-item
+                                span✓span
+                                span class=body-smallWork Deskspan
+                            div
+                            div class=feature-item
+                                span✓span
+                                span class=body-smallMini Fridgespan
+                            div
+                        div
+                        
+                        button onclick=scrollToSection('booking') class=btn-primary btn-full-width
+                            Book This Room →
+                        button
+                    div
+                div
+
+                div class=room-card
+                    div class=room-image-container
+                        img src=httpsimages.unsplash.comphoto-1760067537116-de1f76fe8f95 alt=Executive Suite class=room-image
+                        div class=room-capacity-badge
+                            span👥span
+                            span3-4 Guestsspan
+                        div
+                    div
+                    
+                    div class=room-content
+                        div class=room-header
+                            h3 class=heading-2Executive Suiteh3
+                            div class=room-price
+                                span class=price-amount₹3,499span
+                                span class=price-periodnightspan
+                            div
+                        div
+                        
+                        p class=body-regular style=margin-bottom 24px; color var(--text-secondary);
+                            Our finest accommodation with separate living area and bedroom.
+                        p
+                        
+                        div class=room-features
+                            div class=feature-item
+                                span✓span
+                                span class=body-smallKing Size Bedspan
+                            div
+                            div class=feature-item
+                                span✓span
+                                span class=body-smallACspan
+                            div
+                            div class=feature-item
+                                span✓span
+                                span class=body-smallFree Wi-Fispan
+                            div
+                            div class=feature-item
+                                span✓span
+                                span class=body-smallSmart TVspan
+                            div
+                            div class=feature-item
+                                span✓span
+                                span class=body-smallLiving Areaspan
+                            div
+                            div class=feature-item
+                                span✓span
+                                span class=body-smallMini Barspan
+                            div
+                        div
+                        
+                        button onclick=scrollToSection('booking') class=btn-primary btn-full-width
+                            Book This Room →
+                        button
+                    div
+                div
+            div
+        div
+    section
+
+    !-- Amenities Section --
+    section id=amenities class=section-padding
+        div class=container
+            div class=section-header
+                h2 class=hero-mediumHotel Amenitiesh2
+                p class=body-large section-subtitle
+                    Modern conveniences and thoughtful services for a comfortable stay
+                p
+            div
+
+            div class=amenities-grid
+                div class=amenity-card
+                    div class=amenity-icon📶div
+                    h3 class=heading-3 style=margin-bottom 12px;Free Wi-Fih3
+                    p class=body-smallHigh-speed internet throughout the propertyp
+                div
+                div class=amenity-card
+                    div class=amenity-icon🚗div
+                    h3 class=heading-3 style=margin-bottom 12px;Free Parkingh3
+                    p class=body-smallSecure parking available for all guestsp
+                div
+                div class=amenity-card
+                    div class=amenity-icon☕div
+                    h3 class=heading-3 style=margin-bottom 12px;Optional Breakfasth3
+                    p class=body-smallDelicious breakfast options availablep
+                div
+                div class=amenity-card
+                    div class=amenity-icon🕐div
+                    h3 class=heading-3 style=margin-bottom 12px;247 Receptionh3
+                    p class=body-smallRound-the-clock assistance and supportp
+                div
+                div class=amenity-card
+                    div class=amenity-icon❄️div
+                    h3 class=heading-3 style=margin-bottom 12px;Air Conditioningh3
+                    p class=body-smallAll rooms equipped with modern ACp
+                div
+                div class=amenity-card
+                    div class=amenity-icon📺div
+                    h3 class=heading-3 style=margin-bottom 12px;LEDSmart TVh3
+                    p class=body-smallEntertainment in every roomp
+                div
+                div class=amenity-card
+                    div class=amenity-icon✨div
+                    h3 class=heading-3 style=margin-bottom 12px;Daily Housekeepingh3
+                    p class=body-smallImpeccable cleanliness standardsp
+                div
+                div class=amenity-card
+                    div class=amenity-icon🛡️div
+                    h3 class=heading-3 style=margin-bottom 12px;Secure & Safeh3
+                    p class=body-smallCCTV surveillance and safety measuresp
+                div
+            div
+        div
+    section
+
+    !-- Gallery Section --
+    section id=gallery class=section-padding bg-secondary
+        div class=container
+            div class=section-header
+                h2 class=hero-mediumGalleryh2
+                p class=body-large section-subtitle
+                    Take a virtual tour of our hotel and experience the comfort we offer
+                p
+            div
+
+            div class=gallery-filters
+                button class=filter-btn active onclick=filterGallery('all')Allbutton
+                button class=filter-btn onclick=filterGallery('room')Roomsbutton
+                button class=filter-btn onclick=filterGallery('lobby')Lobbybutton
+                button class=filter-btn onclick=filterGallery('dining')Diningbutton
+            div
+
+            div class=gallery-grid id=galleryGrid
+                div class=gallery-item data-type=lobby
+                    img src=httpsimages.unsplash.comphoto-1625244724120-1fd1d34d00f6 alt=Elegant Lobby class=gallery-image
+                div
+                div class=gallery-item data-type=room
+                    img src=httpsimages.unsplash.comphoto-1760067537740-faa11f7bdf1e alt=Standard Room class=gallery-image
+                div
+                div class=gallery-item data-type=room
+                    img src=httpsimages.unsplash.comphoto-1758448755969-8791367cf5c5 alt=Deluxe Room class=gallery-image
+                div
+                div class=gallery-item data-type=dining
+                    img src=httpsimages.unsplash.comphoto-1729809106394-7ceb922b37f0 alt=Dining Area class=gallery-image
+                div
+                div class=gallery-item data-type=lobby
+                    img src=httpsimages.unsplash.comphoto-1621293954908-907159247fc8 alt=Reception class=gallery-image
+                div
+                div class=gallery-item data-type=room
+                    img src=httpsimages.unsplash.comphoto-1760067537116-de1f76fe8f95 alt=Executive Suite class=gallery-image
+                div
+            div
+        div
+    section
+
+    !-- Reviews Section --
+    section id=reviews class=section-padding
+        div class=container
+            div class=section-header
+                h2 class=hero-mediumGuest Reviewsh2
+                p class=body-large section-subtitle
+                    Hear what our valued guests have to say about their experience
+                p
+            div
+
+            div class=reviews-grid
+                div class=review-card
+                    div class=review-header
+                        div class=review-avatarRSdiv
+                        div
+                            h3 class=heading-3Rahul Sharmah3
+                            div class=review-stars★★★★★div
+                        div
+                    div
+                    p class=body-regular style=margin-bottom 12px; font-style italic; color var(--text-secondary);
+                        Excellent stay! The rooms were spotlessly clean and the staff was incredibly helpful. Great value for money.
+                    p
+                    p class=body-small style=color var(--text-light);December 2024p
+                div
+
+                div class=review-card
+                    div class=review-header
+                        div class=review-avatarPPdiv
+                        div
+                            h3 class=heading-3Priya Patelh3
+                            div class=review-stars★★★★★div
+                        div
+                    div
+                    p class=body-regular style=margin-bottom 12px; font-style italic; color var(--text-secondary);
+                        Loved the hospitality and attention to detail. The location is convenient and the amenities are top-notch.
+                    p
+                    p class=body-small style=color var(--text-light);November 2024p
+                div
+
+                div class=review-card
+                    div class=review-header
+                        div class=review-avatarAKdiv
+                        div
+                            h3 class=heading-3Amit Kumarh3
+                            div class=review-stars★★★★☆div
+                        div
+                    div
+                    p class=body-regular style=margin-bottom 12px; font-style italic; color var(--text-secondary);
+                        Comfortable rooms, friendly staff, and great breakfast. Highly recommend for business and leisure travelers.
+                    p
+                    p class=body-small style=color var(--text-light);November 2024p
+                div
+
+                div class=review-card
+                    div class=review-header
+                        div class=review-avatarSVdiv
+                        div
+                            h3 class=heading-3Sneha Vermah3
+                            div class=review-stars★★★★★div
+                        div
+                    div
+                    p class=body-regular style=margin-bottom 12px; font-style italic; color var(--text-secondary);
+                        Best hotel in Sagar! Clean, comfortable, and affordable. The Wi-Fi was fast and the AC worked perfectly.
+                    p
+                    p class=body-small style=color var(--text-light);October 2024p
+                div
+            div
+        div
+    section
+
+    !-- Booking Section --
+    section id=booking class=section-padding bg-secondary
+        div class=container
+            div class=booking-wrapper
+                div
+                    h2 class=hero-mediumBook Your Stayh2
+                    p class=body-large style=color var(--text-secondary); margin-bottom 40px;
+                        Reserve your room and experience premium hospitality at budget-friendly prices
+                    p
+                    
+                    div style=margin-bottom 40px;
+                        h3 class=heading-2 style=margin-bottom 20px;Special Offersh3
+                        div class=offer-card
+                            h4 class=heading-3 style=margin-bottom 8px;Weekend Specialh4
+                            p class=body-smallBook 2 nights, get 10% off on your entire stayp
+                            span class=offer-codeCode WEEKEND10span
+                        div
+                        div class=offer-card
+                            h4 class=heading-3 style=margin-bottom 8px;Extended Stayh4
+                            p class=body-smallStay for 5+ nights and save 15%p
+                            span class=offer-codeCode STAY15span
+                        div
+                    div
+
+                    div style=padding 24px; border 1px solid var(--border-light); text-align center;
+                        p class=body-regular style=margin-bottom 16px;Need help with your bookingp
+                        a href=tel+918349580770 class=btn-secondaryCall +91 83495 80770a
+                    div
+                div
+
+                div class=booking-form-container
+                    form id=bookingForm onsubmit=handleBooking(event)
+                        div class=form-group
+                            label class=form-labelFull Name label
+                            input type=text class=form-input placeholder=Enter your full name required
+                        div
+
+                        div class=form-row
+                            div class=form-group
+                                label class=form-labelEmail label
+                                input type=email class=form-input placeholder=your@email.com required
+                            div
+
+                            div class=form-group
+                                label class=form-labelPhone label
+                                input type=tel class=form-input placeholder=+91 XXXXX XXXXX required
+                            div
+                        div
+
+                        div class=form-row
+                            div class=form-group
+                                label class=form-label📅 Check-in Date label
+                                input type=date class=form-input required
+                            div
+
+                            div class=form-group
+                                label class=form-label📅 Check-out Date label
+                                input type=date class=form-input required
+                            div
+                        div
+
+                        div class=form-row
+                            div class=form-group
+                                label class=form-label👥 Number of Guests label
+                                select class=form-input required
+                                    option value=11 Guestoption
+                                    option value=22 Guestsoption
+                                    option value=33 Guestsoption
+                                    option value=44 Guestsoption
+                                select
+                            div
+
+                            div class=form-group
+                                label class=form-labelRoom Type label
+                                select class=form-input required
+                                    option value=standardStandard Room - ₹1,499option
+                                    option value=deluxeDeluxe Room - ₹2,299option
+                                    option value=suiteExecutive Suite - ₹3,499option
+                                select
+                            div
+                        div
+
+                        div class=form-group
+                            label class=form-labelSpecial Requests (Optional)label
+                            textarea class=form-input rows=3 placeholder=Any special requirements or requeststextarea
+                        div
+
+                        button type=submit class=btn-primary btn-full-width
+                            📤 Reserve via WhatsApp
+                        button
+
+                        p class=body-small style=text-align center; color var(--text-secondary); margin-top 16px;
+                             Your booking request will be sent via WhatsApp for instant confirmation
+                        p
+                    form
+                div
+            div
+        div
+    section
+
+    !-- Contact Section --
+    section id=contact class=section-padding
+        div class=container
+            div class=section-header
+                h2 class=hero-mediumGet in Touchh2
+                p class=body-large section-subtitle
+                    We're here to help make your stay exceptional
+                p
+            div
+
+            div class=contact-wrapper
+                div
+                    div class=contact-card
+                        div class=contact-icon📍div
+                        h3 class=heading-3 style=margin-bottom 12px;Our Locationh3
+                        p class=body-regularOpposite Sanchi Milk Plant, Sironja, Sagar, Madhya Pradesh 470002, Indiap
+                    div
+
+                    div class=contact-card
+                        div class=contact-icon📞div
+                        h3 class=heading-3 style=margin-bottom 12px;Call Ush3
+                        a href=tel+918349580770 style=color var(--text-primary); text-decoration none; display block; margin-bottom 8px;
+                            +91 83495 80770
+                        a
+                        p class=body-small247 Support Availablep
+                    div
+
+                    div class=contact-card
+                        div class=contact-icon✉️div
+                        h3 class=heading-3 style=margin-bottom 12px;Email Ush3
+                        a href=mailtoinfo@hotelatithi.com style=color var(--text-primary); text-decoration none; display block; margin-bottom 8px;
+                            info@hotelatithi.com
+                        a
+                        p class=body-smallResponse within 24 hoursp
+                    div
+                div
+
+                div class=map-container
+                    iframe
+                        src=httpswww.google.commapsembedpb=!1m18!1m12!1m3!1d3650.123456789!2d78.73!3d23.83!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDQ5JzQ4LjAiTiA3OMKwNDMnNDguMCJF!5e0!3m2!1sen!2sin!4v1234567890
+                        width=100%
+                        height=100%
+                        style=border 0;
+                        allowfullscreen=
+                        loading=lazy
+                        referrerpolicy=no-referrer-when-downgrade
+                    iframe
+                div
+            div
+        div
+    section
+
+    !-- Footer --
+    footer class=footer
+        div class=container
+            div class=footer-content
+                div
+                    h3 class=heading-3 style=color var(--bg-primary); margin-bottom 16px;Hotel Atithih3
+                    p class=body-small style=color rgba(255,255,255,0.7); line-height 1.6;
+                        Experience comfort and care in the heart of Sagar. Your home away from home.
+                    p
+                div
+
+                div
+                    h4 class=body-regular style=color var(--bg-primary); margin-bottom 16px;Quick Linksh4
+                    ul class=footer-links
+                        lia href=#home class=footer-link body-smallHomeali
+                        lia href=#about class=footer-link body-smallAbout Usali
+                        lia href=#rooms class=footer-link body-smallRoomsali
+                        lia href=#amenities class=footer-link body-smallAmenitiesali
+                    ul
+                div
+
+                div
+                    h4 class=body-regular style=color var(--bg-primary); margin-bottom 16px;Exploreh4
+                    ul class=footer-links
+                        lia href=#gallery class=footer-link body-smallGalleryali
+                        lia href=#reviews class=footer-link body-smallReviewsali
+                        lia href=#booking class=footer-link body-smallBook Nowali
+                        lia href=#contact class=footer-link body-smallContactali
+                    ul
+                div
+
+                div
+                    h4 class=body-regular style=color var(--bg-primary); margin-bottom 16px;Contacth4
+                    p class=body-small style=color rgba(255,255,255,0.7); line-height 1.6; margin-bottom 8px;
+                        Opposite Sanchi Milk Plantbr
+                        Sironja, Sagar, MP 470002
+                    p
+                    p class=body-small
+                        a href=tel+918349580770 style=color rgba(255,255,255,0.7); text-decoration none;+91 83495 80770a
+                    p
+                div
+            div
+
+            div class=footer-bottom
+                p class=body-small style=color rgba(255,255,255,0.6);
+                    © 2025 Hotel Atithi. All rights reserved.
+                p
+                p class=body-small style=color rgba(255,255,255,0.6);
+                    Made with ❤️ for our guests
+                p
+            div
+        div
+    footer
+
+    script
+         Smooth scroll to sections
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior 'smooth' });
+            }
+        }
+
+         Gallery filter
+        function filterGallery(type) {
+            const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+             Update active button
+            buttons.forEach(btn = btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+             Filter items
+            items.forEach(item = {
+                if (type === 'all'  item.dataset.type === type) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+         Handle booking form
+        function handleBooking(event) {
+            event.preventDefault();
+            
+            const form = event.target;
+            const formData = new FormData(form);
+            
+             Create WhatsApp message
+            const message = `Hello! I would like to book a room at Hotel Atithi.
+
+Name ${formData.get('name')  form.elements[0].value}
+Email ${formData.get('email')  form.elements[1].value}
+Phone ${formData.get('phone')  form.elements[2].value}
+Check-in ${form.elements[3].value}
+Check-out ${form.elements[4].value}
+Guests ${form.elements[5].value}
+Room Type ${form.elements[6].options[form.elements[6].selectedIndex].text}
+Special Requests ${form.elements[7].value  'None'}`;
+            
+            const whatsappUrl = `httpswa.me918349580770text=${encodeURIComponent(message)}`;
+            
+             Show success message
+            alert('Booking request received! Redirecting to WhatsApp...');
+            
+             Redirect to WhatsApp
+            setTimeout(() = {
+                window.open(whatsappUrl, '_blank');
+            }, 1000);
+            
+             Reset form
+            form.reset();
+        }
+    script
+body
+html
